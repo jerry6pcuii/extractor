@@ -60,7 +60,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: report
-          path: report.txt
+          path: /home/runner/work/extractor/extractor/plugins_downloader/report.txt
 
       - name: Set up Git configuration
         run: |
