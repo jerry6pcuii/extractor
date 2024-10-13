@@ -55,7 +55,7 @@ jobs:
 
       - name: Create Python virtual environment and install dependencies
         run: |
-          chmod +x extractor.sh && chmod +x single_grep.sh && ./extractor.sh
+          sudo apt-get install ripgrep -y && chmod +x extractor.sh && chmod +x single_grep.sh && ./extractor.sh
 
       - name: Run single grep
         run: |
