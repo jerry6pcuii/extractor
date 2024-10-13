@@ -46,21 +46,16 @@ jobs:
       - name: Clone repository
         run: git clone https://github.com/d4rk5id3r/plugins_downloader
 
-      - name: Unzip and navigate to directory
-        run: |
-          cd plugins_downloader && ls -la
-
+     
       - name: Sleep for 1 minute
         run: sleep 10
 
       - name: Create Python virtual environment and install dependencies
         run: |
-          sudo apt-get install ripgrep -y && chmod +x extractor.sh && chmod +x single_grep.sh && ./extractor.sh
+          cd plugins_downloader && ls -la && sudo apt-get install ripgrep -y && chmod +x extractor.sh && chmod +x single_grep.sh && ./extractor.sh &&           ./single_grep.sh  
 
-      - name: Run single grep
-        run: |
-          ./single_grep.sh  
-        
+
+
       - name: Upload report
         uses: actions/upload-artifact@v3
         with:
