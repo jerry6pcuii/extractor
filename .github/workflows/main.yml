@@ -62,7 +62,7 @@ jobs:
           ./single_grep.sh  
         
       - name: Upload report
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: report
           path: report.txt
