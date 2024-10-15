@@ -52,7 +52,7 @@ jobs:
 
       - name: Create Python virtual environment and install dependencies
         run: |
-          cd plugins_downloader && pwd && pip install beautifulsoup4 && pip install requests && ls -la && sudo apt-get install ripgrep -y && chmod +x single_grep.sh && ls -la && python3 extractor.py && cd .. && ./single_grep.sh  
+          cd plugins_downloader && pwd && pip install beautifulsoup4 && pip install requests && ls -la && sudo apt-get install ripgrep -y && chmod +x single_grep.sh && ls -la && python3 extractor.py && ls -la && ./single_grep.sh  
 
 
 
