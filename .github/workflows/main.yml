@@ -65,7 +65,7 @@ jobs:
 
       - name: Remove all Plugin file after Extraction and Grepping
         run: |
-          rm -rf extracted_plugins/*  
+          rm -rf extracted_plugins/*  && ls && pwd
 
       - name: run on line 2
         run: |
