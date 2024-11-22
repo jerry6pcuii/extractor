@@ -66,10 +66,13 @@ jobs:
       - name: Remove all Plugin file after Extraction and Grepping
         run: |
           rm -rf extracted_plugins/*  && ls && pwd
-
+          
+      - name: Clone repository
+        run: git clone https://github.com/d4rk5id3r/plugins_downloader
+        
       - name: run on line 2
         run: |
-         python3 extractor.py && ls -la && \
+         cd plugins_downloader && pwd && python3 extractor.py && ls -la && \
          # Provide user input for single_grep1.sh using echo
          echo -e "2" | ./single_grep.sh  # Replace 1, 2, 3 with the actual integer inputs expected by your script
 
