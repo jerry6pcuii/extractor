@@ -53,13 +53,13 @@ jobs:
         run: |
           cd plugins_downloader && pwd && pip install beautifulsoup4 && pip install requests && ls -la && sudo apt-get install ripgrep -y && chmod +x single_grep.sh && ls -la && python3 extractor.py && ls -la && \
           # Provide user input for single_grep.sh using echo
-          echo -e "10" | ./single_grep.sh  # Replace 1, 2, 3 with the actual integer inputs expected by your script
+          echo -e "11" | ./single_grep.sh  # Replace 1, 2, 3 with the actual integer inputs expected by your script
 
       - name: Upload report
         uses: actions/upload-artifact@v3
         with:
           name: report
-          path: /home/runner/work/extractor/extractor/plugins_downloader/report_line_10.txt
+          path: /home/runner/work/extractor/extractor/plugins_downloader/report_line_11.txt
 
 
 
@@ -72,11 +72,11 @@ jobs:
         run: |
          cd plugins_downloader && pwd && python3 extractor.py && ls -la && \
          # Provide user input for single_grep1.sh using echo
-         echo -e "10" | ./single_grep.sh  # Replace 1, 2, 3 with the actual integer inputs expected by your script
+         echo -e "11" | ./single_grep.sh  # Replace 1, 2, 3 with the actual integer inputs expected by your script
 
 
       - name: Upload report
         uses: actions/upload-artifact@v3
         with:
           name: report
-          path: /home/runner/work/extractor/extractor/plugins_downloader/report_line_10.txt
+          path: /home/runner/work/extractor/extractor/plugins_downloader/report_line_11.txt
