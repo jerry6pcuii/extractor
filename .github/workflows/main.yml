@@ -1,4 +1,4 @@
-name: Execute Puppeteer Script and Generate Report
+name: Execute Puppeteer Script and Generate Reported
 
 on:
   push:
