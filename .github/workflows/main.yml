@@ -27,7 +27,6 @@ jobs:
             gnupg2 \
             libnss3 \
             libxss1 \
-            libgconf-2-4 \
             libx11-xcb1 \
             libxcomposite1 \
             libatk-bridge2.0-0 \
