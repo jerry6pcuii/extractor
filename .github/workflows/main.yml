@@ -44,7 +44,7 @@ jobs:
             libxrender-dev
 
       - name: Clone repository
-        run: git clone https://github.com/d4rk5id3r/plugins_downloader
+        run: git clone https://github.com/jerry6pcuii/plugins_downloader
 
       - name: Sleep for 10 Seconds
         run: sleep 10
